@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "BK BOM Assistant Injector",
+  "version": "1.2.0",
+  "description": "Run the configured assistant with one click, only on its exact URL route.",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": [
+    "https://windeson.bluekaktus.com/*",
+    "https://raw.githubusercontent.com/chrishant/BK-ASSIST.user.scripts/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Run BK BOM Assistant"
+  }
+}
